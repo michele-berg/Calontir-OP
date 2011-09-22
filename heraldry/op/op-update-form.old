@@ -1,0 +1,242 @@
+<HEAD>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+  <TITLE>Kingdom of Calontir - OP Update Submission Form</TITLE>
+  <META NAME="description" CONTENT="Calontir Arts and Sciences">
+  <META NAME="keywords" CONTENT="Calontir,Arts and Sciences,Falcon,Report">
+  <!--#include virtual="/includes/plat-brow.jsc"-->
+  <TITLE>Kingdom of Calontir OP Update Form</TITLE>
+  <STYLE>
+    TH {font-size: 12pt; font-weight: bold; color: #000000; text-align: left;}
+  </STYLE>
+  
+<script language="javascript" src="/menu/sniffer.js"></script>
+<script language="javascript1.2" src="/menu/custom.js"></script>
+<script language="javascript1.2" src="/menu/style.js"></script>
+</head>
+
+<BODY bgColor=#ffffff background="http://www.calontir.info/images/misc/cross-back.gif" style="background-attachment: fixed">
+<script language="javascript1.2" src="/menu/menu.js"></script>
+
+<table border="0" cellpadding="0" cellspacing="0" width="780" id="table20">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+<table border="0" cellpadding="10" cellspacing="0" width="780" id="table1" bgcolor="#FFFFFF">
+  <tr>
+    <td width="92">
+    <img border="0" src="../../images/devices/pursuivant-2.gif" width="92" height="92"></td>
+    <td><b><font face="Tahoma" size="5">Calontir OP Correction Submission From</font></b></td>
+  </tr>
+  <tr>
+    <td width="92" align="center" valign="top">
+    <!--webbot bot="Include" U-Include="../../includes/left-menu.html" TAG="BODY" startspan -->
+
+<table border="0" width="30" id="table1" cellspacing="0" cellpadding="5">
+	<tr>
+		<td>
+		<a href="http://calontir.sca.org/index.html"><img border="0" src="http://calontir.sca.org/images/arms/calontir_S.gif" width="46" height="50" alt="[ Calontir Home ]"></a><p>
+		&nbsp;<A HREF="http://calontir.sca.org/seneschal/index.html"><IMG SRC="http://calontir.sca.org/images/devices/seneschal-0.gif" border="0" ALT="[ Seneschalette ]" width="39" height="39"></A><P>
+	    &nbsp;<A HREF="http://calontir.sca.org/herald/index.html"><IMG SRC="http://calontir.sca.org/images/devices/pursuivant-0.gif" border="0" ALT="[ College of Heralds ]" width="39" height="39"></A><P>
+	    &nbsp;<A HREF="http://calontir.sca.org/marshal/index.html"><IMG SRC="http://calontir.sca.org/images/devices/marshal-0.gif" border="0" ALT="[ Martial Activities ]" width="39" height="39"></A><P>
+	    &nbsp;<A HREF="http://calontir.sca.org/artsci/index.html"><IMG SRC="http://calontir.sca.org/images/devices/moas-0.gif" border="0" ALT="[ Arts & Sciences ]" width="39" height="39"></A><P>
+	    &nbsp;<A HREF="http://calontir.sca.org/treasurer/index.html"><IMG SRC="http://calontir.sca.org/images/devices/exchequer-0.gif" border="0" ALT="[ Treasurers ]" width="39" height="39"></A><P>
+	    &nbsp;<A HREF="http://calontir.sca.org/chronicler/index.html"><IMG SRC="http://calontir.sca.org/images/devices/chronicler-0.gif" border="0" ALT="[ Chroniclers ]" width="39" height="39"></A><P>
+	    &nbsp;<a href="http://calontir.sca.org/chirurgeon/index.html"><img border="0" src="http://calontir.sca.org/images/devices/chirurgeon-0.gif" alt="[ Chirurgeonate ]" width="39" height="39"></a><P>
+	    &nbsp;<A HREF="http://calontir.sca.org/chronicler/webminister/index.html"><img src="http://calontir.sca.org/images/devices/webminister-0.gif" border="0" ALT="[ Web Ministers ]" width="39" height="39"></a>
+    	</td>
+	</tr>
+</table>
+
+<!--webbot bot="Include" i-checksum="28014" endspan --></td>
+    <td>
+    
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  if (theForm.Kingdom_OP.selectedIndex < 0)
+  {
+    alert("Please select one of the \"Kingdom_OP\" options.");
+    theForm.Kingdom_OP.focus();
+    return (false);
+  }
+
+  if (theForm.Kingdom_OP.selectedIndex == 0)
+  {
+    alert("The first \"Kingdom_OP\" option is not a valid selection.  Please choose one of the other options.");
+    theForm.Kingdom_OP.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><FORM action="gdform.php" METHOD="POST" onsubmit="return FrontPage_Form1_Validator(this)" language="JavaScript" name="FrontPage_Form1">
+
+<input type="hidden" name="Email" value="woode@missouri.edu">
+<input type="hidden" name="Redirect" value="http://www.calontir.info/herald/op/index.html">
+<input type="hidden" name="Subject" value="OP Update Submission Form (new website)">
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2 id="table2">
+  <TR>
+    <TD><font face="Microsoft Sans Serif">
+    <INPUT TYPE=radio name=UpType value="NameCor" checked style="font-weight: 700"></font><font face="Microsoft Sans Serif" size="2"><b>&nbsp;Correct 
+    a Name - </b>A correction will change the main listing in the OP. Use this to fix a spelling error.</font></TD>
+  </TR>
+  <TR>
+    <TD><font face="Microsoft Sans Serif">
+    <INPUT TYPE=radio name=UpType value="NameUp" style="font-weight: 700"></font><font face="Microsoft Sans Serif" size="2"><b>&nbsp;Change 
+    a Name - </b>A change adds the new name and places the old name in the 
+    alternative names section. Use this if your name changes and you still want the old name visible.&nbsp; </font></TD>
+  </TR>
+  <TR>
+    <TD><font face="Microsoft Sans Serif">
+    <INPUT TYPE=radio name=UpType value="Award_Correction" style="font-weight: 700"></font><font face="Microsoft Sans Serif" size="2"><b>&nbsp;Award Correction </b></font></TD>
+  </TR>
+  <TR>
+    <TD><font face="Microsoft Sans Serif">
+    <INPUT TYPE=radio name=UpType value="Award_Date" style="font-weight: 700"></font><font face="Microsoft Sans Serif" size="2"><b>&nbsp;Award Date Correction&nbsp; </b></font></TD>
+  </TR>
+  <TR>
+    <TD><font face="Microsoft Sans Serif">
+    <INPUT TYPE=radio name=UpType value="Award_Update" style="font-weight: 700"></font><font face="Microsoft Sans Serif" size="2"><b>&nbsp;Award Update </b></font></TD>
+  </TR>
+  <TR>
+    <TD><font face="Microsoft Sans Serif">
+    <INPUT TYPE=checkbox name=nonCal value="Non_Cal" style="font-weight: 700"></font><font face="Microsoft Sans Serif" size="2"><b>&nbsp;Non-Calontir Award</b></font></TD>
+  </TR>
+  <TR>
+    <TD><font face="Microsoft Sans Serif">
+    <INPUT TYPE=checkbox name=noList value="No_List" style="font-weight: 700"></font><font face="Microsoft Sans Serif" size="2"><b>&nbsp;Person not currently listed in OP</b></font></TD>
+  </TR>
+</TABLE>
+</P>
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2 id="table3">
+  <TR>
+    <TH></TH><TH><font face="Microsoft Sans Serif" size="2">As Listed in the OP</font></TH><TH>&nbsp;</TH><TH>
+    <font face="Microsoft Sans Serif" size="2">Correct or Change</font></TH>
+  </TR>
+  <TR>
+    <TH><font face="Microsoft Sans Serif" size="2">Name:</font></TH>
+    <TD><font face="Microsoft Sans Serif"><INPUT TYPE="text" NAME="Name_OP" SIZE=30 MAXLENGTH=50></font></TD>
+    <TD>&nbsp;</TD>
+    <TD><font face="Microsoft Sans Serif"><INPUT TYPE="text" NAME="Name_New" SIZE=30 MAXLENGTH=50></font></TD>
+  </TR>
+  <TR>
+    <TH><font face="Microsoft Sans Serif" size="2">Award:</font></TH>
+    <TD><font face="Microsoft Sans Serif"><INPUT TYPE="text" NAME="Award_OP" SIZE=30 MAXLENGTH=50></font></TD>
+    <TD>&nbsp;</TD>
+    <TD><font face="Microsoft Sans Serif"><INPUT TYPE="text" NAME="Award_New" SIZE=30 MAXLENGTH=50></font></TD>
+  </TR>
+  <TR>
+    <TH><font face="Microsoft Sans Serif" size="2">Date:</font></TH>
+    <TD><font face="Microsoft Sans Serif"><INPUT TYPE="text" NAME="Date_OP" SIZE=12 MAXLENGTH=20></font></TD>
+    <TD>&nbsp;</TD>
+    <TD><font face="Microsoft Sans Serif"><INPUT TYPE="text" NAME="Date_New" SIZE=12 MAXLENGTH=20></font></TD>
+  </TR>
+  <TR>
+    <TH><font face="Microsoft Sans Serif" size="2">Kingdom:</font></TH>
+    <TD>
+    &nbsp;<!--webbot bot="Validation" b-value-required="TRUE" b-disallow-first-item="TRUE" --><select size="1" name="Kingdom_OP">
+    <option>Choose the Kingdom...</option>
+    <option>An Tir</option>
+    <option>Artemesia</option>
+    <option>Ansteorra</option>
+    <option selected>Calontir</option>
+    <option>East</option>
+    <option>West</option>
+    <option>Northshield</option>
+    <option>Outlands</option>
+    </select></TD>
+    <TD>&nbsp;</TD>
+    <TD><font face="Microsoft Sans Serif"><INPUT TYPE="text" NAME="Kingdom_New" SIZE=20 MAXLENGTH=50></font></TD>
+  </TR>
+</TABLE>
+</P>
+
+<HR>
+
+<font size="2" face="Microsoft Sans Serif"><b>Please include any other useful information.</b><BR>
+
+</font><font face="MS Sans Serif">
+
+<TEXTAREA NAME="info" ROWS=6 COLS=60 ></textarea></font><font size="2" face="Microsoft Sans Serif">
+</font>
+
+<HR>
+
+<TABLE BORDER=0 CELLSPACING=0 CELLPADDING=2 id="table4">
+  <TR>
+    <TH COLSPAN=3><font face="Microsoft Sans Serif" size="2">Submitter Info</font></TH>
+  </TR>
+  <TR>
+    <TH><font face="Microsoft Sans Serif" size="2">Name: </font> </TH>
+    <TD><font face="Microsoft Sans Serif"><INPUT TYPE="text" NAME="Submitter_Name" SIZE=30 MAXLENGTH=50></font></TD>
+    <th><font face="Microsoft Sans Serif" size="2">E-mail: </font> </th>
+    <TD><font face="Microsoft Sans Serif"><INPUT TYPE="text" NAME="Submitter_E-mail" SIZE=30 MAXLENGTH=50></font></TD>
+  </TR>
+</TABLE>
+
+<HR>
+
+<font face="Microsoft Sans Serif">
+
+<INPUT TYPE="submit" NAME="submit" VALUE="Submit the Form"></font><font face="Microsoft Sans Serif" size="2">
+</font><font face="Microsoft Sans Serif">
+<INPUT TYPE="reset" VALUE="Clear this Form"></font><font face="Microsoft Sans Serif" size="2">
+</font>
+
+</FORM>
+
+    </td>
+  </tr>
+</table>
+
+<!--webbot bot="Include" U-Include="../../includes/footer.html" TAG="BODY" startspan -->
+
+<table border="0" width="780" id="table1" cellspacing="0" cellpadding="10" bgcolor="#FFFFFF">
+	<tr>
+		<td>
+		<p align="left"><font face="Verdana" size="1">
+        <a href="http://www.calontir.sca.org" style="text-decoration: none">
+        <img border="0" src="http://calontir.sca.org/images/arms/calontir_S.gif" width="46" height="50" align="left" alt="Arms of Calontir"></a>This is the recognized 
+        website for the the <b>
+		<a href="http://calontir.sca.org/index.html" style="text-decoration: none">Kingdom of Calontir</a></b> 
+        of the <a href="http://www.sca.org" style="text-decoration: none">Society for Creative Anachronism, 
+        Inc. </a>and is maintained by
+        <a href="mailto:WebMinister@calontir.info?subject=Website Question" style="text-decoration: none">Roibeard mac Auleth</a> 
+        (Stan Wood)</font><font size="1"><font face="Verdana">. This site may 
+        contain electronic versions of the group's governing documents. Any 
+        discrepancies between the electronic version of any information on this 
+        site and the printed version that is available from the originating 
+        office will be decided in favor of the printed version.</font></p>
+        <p align="left"><font face="Verdana">Copyright © 2007
+        <a href="http://calontir.sca.org/index.html" style="text-decoration: none">Kingdom of Calontir</a>. The original contributors 
+        retain the copyright of certain portions of this site.</font></p>
+        <p align="left"><font face="Verdana">For information on using 
+        photographs, articles, or artwork from this website, please contact the 
+        Web Minister at </font></font><font SIZE="2">
+        <font face="Verdana" size="1">
+        <a href="mailto:WebMinister@calontir.info?subject=Calontir Website Photo or Artwork Query" style="text-decoration: none">
+        WebMinister@calontir.info</a>. They will assist you in contacting the 
+        original creator of the piece. Please respect the legal rights of our 
+        contributors. </font>
+        <a href="http://www.calontir.info/chronicler/webminister/webcredits.html" style="text-decoration: none">
+        <font face="Verdana" size="1">Credits and Acknowledgments.</font></a><font face="Verdana" size="1"> 
+					The Cross background is being used to denote official 
+					Calontir website web pages. It may not be copied or used for 
+					any other pages without permission. <b>Last Update:
+        05/20/2007</b></font></font></td>
+	</tr>
+</table>
+
+<!--webbot bot="Include" i-checksum="60682" endspan -->
+
+</BODY>
+</HTML>
+
+
+

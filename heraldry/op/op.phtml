@@ -1,0 +1,99 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+  <TITLE>Calontir Roll of Awards</TITLE>
+  <META NAME="description" CONTENT="Welcome page for the Kingdom of Calontir, part of the Society for 
+  Creative Anachronism an international medieval and rennasiance historical recreation group.">
+  <META NAME="keywords" CONTENT="Calontir,SCA,Society for Creative Anachronism,Missouri,Kansas,Iowa,
+  Nebraska,Arkansas,Heartland,Midwest,Huscarl,Fyrdman,Falcon,Calatrava,Gold and Purple,OP, Herald,">
+  <META NAME="expires" CONTENT="Jan 1 2000">
+  <!--#include virtual="/includes/plat-brow.jsc"-->
+</HEAD>
+<BODY BACKGROUND="images/cross-back.gif" BGCOLOR="#FFFFFF">
+
+<BR CLEAR=ALL>
+
+<?
+
+include("dbLogin.inc");
+dbLogin();
+
+#mysql_connect("localhost", conradmk, wannago);
+
+$awardRS = mysql(calontir_sca_org, "SELECT AwardDate FROM Awards ORDER BY AwardDate DESC");
+$numAward = mysql_numrows($awardRS);
+
+$lastDate = mysql_result($awardRS,0,"AwardDate");
+echo "<H2>Calontir Roll of Awards<SPAN STYLE=\"font-size: 12pt; font-weight: normal;\"> - Current as of $lastDate</SPAN></H2>\n";
+
+echo "<TABLE CELLPADDING=2 CELLSPACING=1 BORDER=1 bordercolordark=#9933CC bordercolorlight=#CC66FF>\n";
+
+$kListRS = mysql(calontir_sca_org, "SELECT * FROM Kingdoms ORDER BY KingdomInd");
+$numKList = mysql_numrows($kListRS);
+
+$popRS = mysql(calontir_sca_org, "SELECT * FROM Populace ORDER BY Name");
+$numPop = mysql_numrows($popRS);
+$i = 0;
+
+while($i < $numPop) 
+{
+  $name =  mysql_result($popRS,$i,"Name");
+  $altNames = mysql_result($popRS,$i,"AltNames");
+  $popInd = mysql_result($popRS,$i,"PopInd");
+
+  echo "<TR>\n";
+  echo "<TD WIDTH=600>\n";
+  if ( $altNames == "" )
+  {
+    echo "<SPAN STYLE=\"font-weight: bold;\">$name</SPAN>\n";
+  }
+  else
+  {
+    echo "<SPAN STYLE=\"font-weight: bold;\">$name</SPAN><BR>&nbsp;&nbsp;&nbsp;&nbsp;$altNames\n";
+  }
+  echo "<HR>\n";
+
+  $awardRS = mysql(calontir_sca_org, "SELECT * FROM Awards WHERE PopInd =' $popInd ' ORDER BY AwardDate");
+  $numAward = mysql_numrows($awardRS);
+
+  $j = 0;
+
+  echo "<TABLE CELLPADDING=0 CELLSPACING=0 BORDER=0>";
+  while($j < $numAward)
+  {
+    $ac = mysql_result($awardRS,$j,"awardCode");
+    $awardDate = mysql_result($awardRS,$j,"awardDate");
+    $aListRS = mysql(calontir_sca_org, "SELECT * FROM AwardList WHERE AwardInd = ' $ac '");
+    $numAList = mysql_numrows($aListRS);
+    $awardName = mysql_result($aListRS,0,"Name");
+    $kc = mysql_result($awardRS,$j,"KingdomCode");
+    if ( $kc != 0 )
+    {
+      $kc = $kc - 1;
+      $Kingdom = mysql_result($kListRS,$kc,"Name");
+      echo "<TR><TD>$awardName</TD><TD>&nbsp;</TD><TD>$awardDate</TD><TD>&nbsp;</TD><TD>$Kingdom</TD></TR>\n";
+    }
+    else
+    {
+      echo "<TR><TD>$awardName</TD><TD>&nbsp;</TD><TD>$awardDate</TD></TR>\n";
+    }
+    $j++;
+  }
+  echo "</TABLE></TD>\n";
+  echo "</TR>\n";
+  echo "<TR><TD HEIGHT=4 BGCOLOR=gold></TD></TR>\n";
+  $i++;
+}
+?>
+</TABLE>
+
+
+<BR CLEAR=ALL>
+<HR>
+
+<!--#include virtual="/includes/footer.html"-->
+<P>
+
+</BODY>
+</TABLE>
+

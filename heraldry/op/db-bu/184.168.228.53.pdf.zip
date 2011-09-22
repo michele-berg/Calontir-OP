@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr">
+<head>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>phpMyAdmin</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="phpmyadmin.css.php?token=fda14ba90d4ce9919e519d17be39b389&amp;js_frame=right&amp;nocache=3906704372" />
+    <link rel="stylesheet" type="text/css" href="print.css" media="print" />
+    <script type="text/javascript">
+    try {
+        // can't access this if on a different domain
+        var topdomain = top.document.domain;
+        // double-check just for sure
+        if (topdomain != self.document.domain) {
+            alert("Redirecting...");
+            top.location.replace(self.document.URL.substring(0, self.document.URL.lastIndexOf("/")+1));
+        }
+    }
+    catch(e) {
+            alert("Redirecting... (error: " + e);
+            top.location.replace(self.document.URL.substring(0, self.document.URL.lastIndexOf("/")+1));
+    }
+
+    </script>
+        <script type="text/javascript">
+    // <![CDATA[
+    // Updates the title of the frameset if possible (ns4 does not allow this)
+    if (typeof(parent.document) != 'undefined' && typeof(parent.document) != 'unknown'
+        && typeof(parent.document.title) == 'string') {
+        parent.document.title = 'kocdbopinfo.db.7394721.hostedresource.com /  / PROFILING';
+    }
+    
+    // ]]>
+    </script>
+        
+    <script src="./js/tooltip.js" type="text/javascript"></script>
+    <meta name="OBGZip" content="true" />
+        <!--[if IE 6]>
+    <style type="text/css">
+    /* <![CDATA[ */
+    html {
+        overflow-y: scroll;
+    }
+    /* ]]> */
+    </style>
+    <![endif]-->
+</head>
+
+<body>
+<div id="TooltipContainer" onmouseover="holdTooltip();" onmouseout="swapTooltip('default');"></div>
+    <div id="serverinfo">
+<a href="main.php?token=fda14ba90d4ce9919e519d17be39b389" class="item">        <img class="icon" src="./themes/original/img/s_host.png" width="16" height="16" alt="" /> 
+Server: kocdbopinfo.db.7394721.hostedresource.com</a>
+</div>
+<!-- PMA-SQL-ERROR -->
+    <div class="error"><h1>Error</h1>
+    <p><strong>SQL query:</strong>
+<a href="http://dev.mysql.com/doc/refman/5.0/en/select.html" target="mysql_doc"><img class="icon" src="./themes/original/img/b_help.png" width="11" height="11" alt="Documentation" title="Documentation" /></a>    </p>
+    <p>
+        <span class="syntax"><span class="syntax_alpha syntax_alpha_reservedWord">SELECT</span>  <span class="syntax_punct">*</span> <br /><span class="syntax_alpha syntax_alpha_reservedWord">FROM</span>  <span class="syntax_quote syntax_quote_backtick">`information_schema`</span><span class="syntax_punct syntax_punct_qualifier">.</span><span class="syntax_quote syntax_quote_backtick">`PROFILING`</span> </span>
+    </p>
+<p>
+    <strong>MySQL said: </strong><a href="http://dev.mysql.com/doc/refman/5.0/en/error-messages-server.html" target="mysql_doc"><img class="icon" src="./themes/original/img/b_help.png" width="11" height="11" alt="Documentation" title="Documentation" /></a>
+</p>
+<code>
+#1289 - The 'SHOW PROFILE' feature is disabled; you need MySQL built with 'enable-profiling' to have it working
+</code><br />
+</div><fieldset class="tblFooters">    </fieldset>
+
+<script type="text/javascript">
+//<![CDATA[
+// updates current settings
+if (window.parent.setAll) {
+    window.parent.setAll('en-utf-8', 'utf8_unicode_ci', '1', '', 'PROFILING', 'fda14ba90d4ce9919e519d17be39b389');
+}
+    // set current db, table and sql query in the querywindow
+if (window.parent.reload_querywindow) {
+    window.parent.reload_querywindow(
+        '',
+        'PROFILING',
+        '');
+}
+    
+if (window.parent.frame_content) {
+    // reset content frame name, as querywindow needs to set a unique name
+    // before submitting form data, and navigation frame needs the original name
+    if (typeof(window.parent.frame_content.name) != 'undefined'
+     && window.parent.frame_content.name != 'frame_content') {
+        window.parent.frame_content.name = 'frame_content';
+    }
+    if (typeof(window.parent.frame_content.id) != 'undefined'
+     && window.parent.frame_content.id != 'frame_content') {
+        window.parent.frame_content.id = 'frame_content';
+    }
+    //window.parent.frame_content.setAttribute('name', 'frame_content');
+    //window.parent.frame_content.setAttribute('id', 'frame_content');
+}
+//]]>
+</script>
+</body>
+</html>
